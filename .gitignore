@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+.vercel
+.env*.local
+
+# Private planning notes (pricing, client names). Keep local.
+BRAND_QUESTIONNAIRE.md
+IDEAL_CLIENT_QUESTIONNAIRE.md
