@@ -16,6 +16,9 @@ const es: Dictionary = {
     cta: 'Agendar llamada',
     menu: 'Abrir o cerrar el menú de navegación',
     switchLabel: 'View in English',
+    mainLabel: 'Principal',
+    footerLabel: 'Pie de página',
+    skip: 'Saltar al contenido',
     switchShort: 'EN',
   },
   hero: {
@@ -140,6 +143,7 @@ const es: Dictionary = {
       },
     ],
   },
+  statsLabel: 'Destacados',
   stack: {
     label: 'Herramientas con las que trabajamos',
   },
@@ -165,6 +169,7 @@ const es: Dictionary = {
     title: 'Tu socio de ingeniería senior, bajo tu marca',
     body: 'Las agencias nos integran en proyectos de sus clientes cuando necesitan a alguien que defina, construya y despliegue sin supervisión constante. Trabajamos dentro de tu proceso y tus herramientas, y la relación con tu cliente sigue siendo tuya.',
     cta: 'Trabajemos juntos',
+    subject: 'Alianza con agencia',
   },
   faq: {
     eyebrow: 'Preguntas',

@@ -10,7 +10,7 @@ export function Footer({ t, nav }: { t: Dictionary['footer']; nav: Dictionary['n
           <Wordmark />
           <p>{t.tagline}</p>
         </div>
-        <nav className="footer-nav" aria-label="Footer">
+        <nav className="footer-nav" aria-label={nav.footerLabel}>
           <a href="#services">{nav.services}</a>
           <a href="#process">{nav.process}</a>
           <a href="#work">{nav.work}</a>

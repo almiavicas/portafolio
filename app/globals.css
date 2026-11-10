@@ -237,17 +237,26 @@ ol {
   inset: 0 0 auto;
   z-index: 50;
   height: var(--header-h);
-  transition:
-    background-color 0.35s var(--ease),
-    border-color 0.35s var(--ease),
-    backdrop-filter 0.35s var(--ease);
+  transition: border-color 0.35s var(--ease);
   border-bottom: 1px solid transparent;
 }
-.site-header.is-scrolled {
+.site-header::before {
+  /* Blur lives on a pseudo-element: a backdrop-filter on the header itself would trap the fixed mobile menu. */
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background: rgba(5, 6, 10, 0.72);
   backdrop-filter: blur(14px) saturate(140%);
   -webkit-backdrop-filter: blur(14px) saturate(140%);
+  opacity: 0;
+  transition: opacity 0.35s var(--ease);
+}
+.site-header.is-scrolled {
   border-bottom-color: var(--border);
+}
+.site-header.is-scrolled::before {
+  opacity: 1;
 }
 .header-inner {
   height: 100%;
@@ -351,9 +360,7 @@ ol {
     justify-content: center;
     gap: 6px;
     padding: 0 24px;
-    background: rgba(5, 6, 10, 0.97);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background: var(--bg);
     opacity: 0;
     visibility: hidden;
     transition:

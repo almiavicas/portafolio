@@ -16,6 +16,9 @@ const en = {
     cta: 'Book a call',
     menu: 'Toggle navigation menu',
     switchLabel: 'Ver en español',
+    mainLabel: 'Main',
+    footerLabel: 'Footer',
+    skip: 'Skip to content',
     switchShort: 'ES',
   },
   hero: {
@@ -140,6 +143,7 @@ const en = {
       },
     ],
   },
+  statsLabel: 'Highlights',
   stack: {
     label: 'Tools we ship with',
   },
@@ -165,6 +169,7 @@ const en = {
     title: 'Your senior engineering partner, under your brand',
     body: 'Agencies bring us into client projects when they need someone who can scope, build and ship without hand-holding. We work inside your process and your tools, and your client relationship stays yours.',
     cta: 'Partner with us',
+    subject: 'Agency partnership',
   },
   faq: {
     eyebrow: 'FAQ',

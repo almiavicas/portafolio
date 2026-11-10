@@ -1,8 +1,8 @@
 import type { Dictionary } from '@/content/en'
 
-export function Stats({ stats }: { stats: Dictionary['stats'] }) {
+export function Stats({ stats, label }: { stats: Dictionary['stats']; label: string }) {
   return (
-    <section className="stats" id="stats" aria-label="Highlights">
+    <section className="stats" id="stats" aria-label={label}>
       <div className="container stats-grid">
         {stats.map((s, i) => (
           <div className="stat" key={i} data-reveal>

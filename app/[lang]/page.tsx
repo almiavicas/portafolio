@@ -23,19 +23,19 @@ export default async function Home({ params }: PageProps<'/[lang]'>) {
   return (
     <>
       <a href="#main" className="skip-link">
-        {lang === 'es' ? 'Saltar al contenido' : 'Skip to content'}
+        {t.nav.skip}
       </a>
       <Header t={t.nav} lang={lang} other={otherLocale(lang)} />
       <main id="main">
         <Hero t={t.hero} />
-        <Stats stats={t.stats} />
+        <Stats stats={t.stats} label={t.statsLabel} />
         <Problems t={t.problems} />
         <Services t={t.services} />
         <Process t={t.process} />
         <Work t={t.work} />
         <StackMarquee label={t.stack.label} />
         <Founder t={t.founder} />
-        <Agencies t={t.agencies} subject={t.contact.subject} />
+        <Agencies t={t.agencies} />
         <Faq t={t.faq} />
         <Contact t={t.contact} />
       </main>

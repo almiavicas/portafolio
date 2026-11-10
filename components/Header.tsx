@@ -38,7 +38,7 @@ export function Header({ t, lang, other }: { t: Dictionary['nav']; lang: Locale;
           <Wordmark />
         </a>
 
-        <nav className="nav" id="site-nav" aria-label="Main">
+        <nav className="nav" id="site-nav" aria-label={t.mainLabel}>
           {LINKS.map((key) => (
             <a key={key} href={`#${key}`} onClick={close}>
               {t[key]}
